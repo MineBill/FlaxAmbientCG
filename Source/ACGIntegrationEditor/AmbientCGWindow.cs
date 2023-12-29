@@ -79,7 +79,7 @@ public class AmbientCGWindow : CustomEditorWindow
             _parameters.Type = type;
         };
         assetType.ComboBox.EnumTypeValue = AssetType.Material;
-        assetType.ComboBox.Enabled = true;
+        assetType.ComboBox.Enabled = false;
         assetType.ComboBox.TooltipText = "Allows changing the asset type. Only Material is supported for now.";
         var intBox = filters.IntegerValue("Results per page:", "How many results to show per page");
         intBox.IntValue.ValueChanged += () =>
