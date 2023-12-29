@@ -8,6 +8,8 @@
 
 This is a WIP plugin that integrates ambientCG directly inside Flax, giving you the ability to quickly download new material for free, all thanks to [ambientCG](https://ambientcg.com/).
 
+You can find the window under `Tools > AmbientCG`.
+
 https://github.com/MineBill/FlaxAmbientCG/assets/30367251/a09e64d1-9014-4eca-8f60-04f9553f7d97
 
 ## How this works
