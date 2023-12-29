@@ -1,7 +1,10 @@
 # AmbientCG for Flax
 > [!WARNING]
-> Due to some bugs with Flax in regard to custom editor windows, i'm extremely unhappy with the level of polish of this plugin. However, instead of shelving it until these bugs get resolved, i decided to release it anyway incase it helps someone.
+> Due to some bugs with Flax in regards to custom editor windows, i'm extremely unhappy with the level of polish of this plugin. However, instead of shelving it until these bugs get resolved, i decided to release it anyway in case it helps someone.
 > [Here](https://github.com/FlaxEngine/FlaxEngine/issues/2133) is one of them, so you are aware of the limitations.
+
+> [!NOTE]
+> Please remember to donate to [ambientCG](https://ambientcg.com/) if you can!
 
 This is a WIP plugin that integrates ambientCG directly inside Flax, giving you the ability to quickly download new material for free, all thanks to [ambientCG](https://ambientcg.com/).
 
