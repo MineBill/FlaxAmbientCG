@@ -1,0 +1,159 @@
+# Flax stuff
+*.sln
+[Dd]ebug/
+[Rr]elease/
+obj/
+Cache/
+Binaries/
+Output/
+Logs/
+Source/*.Gen.*
+Source/*.csproj
+/Package_*/
+!Source/Engine/Debug
+/Source/Platforms/Editor/Linux/Mono/etc/mono/registry
+PackageEditor_Cert.command
+PackageEditor_Cert.bat
+PackagePlatforms_Cert.bat
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+*.idb
+*.tlog
+*.lastbuilddate
+*.opendb
+*.DS_Store
+*.xcodeproj
+launchSettings.json
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+
+# NuGet Packages Directory
+packages/**/*
+!packages/repositories.config
+
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# JustCode is a .NET coding addin-in
+.JustCode
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+
+# MightyMoose
+*.mm.*
+AutoTest.Net/
+
+# Installshield output folder
+[Ee]xpress/
+
+# DocProject is a documentation generator add-in
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.[Pp]ublish.xml
+*.azurePubxml
+
+# Enable "build/" folder in the NuGet Packages folder since
+# NuGet packages use it for MSBuild targets.
+# This line needs to be after the ignore of the build folder
+# (and the packages folder if the line above has been uncommented)
+!packages/build/
+
+# Windows Azure Build Output
+csx/
+*.build.csdef
+
+# Windows Store app package directory
+AppPackages/
+
+# Others
+sql/
+*.Cache
+ClientBin/
+[Ss]tyle[Cc]op.*
+~$*
+*~
+*.dbmdl
+*.dbproj.schemaview
+*.pfx
+*.publishsettings
+node_modules/
+
+# Microsoft Fakes
+FakesAssemblies/
+
+# IDE files
+*.VC.db
+enc_temp_folder/
+*.stackdump
+.vs/
+bin/
+obj/
+*.vcxproj.filters
+.vscode/
+.idea/
+*.code-workspace
+omnisharp.json

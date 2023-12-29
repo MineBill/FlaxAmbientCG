@@ -1,0 +1,28 @@
+﻿{
+	"Name": "FlaxAmbientCG",
+	"Version": "1.0",
+	"Company": "MineBill",
+	"Copyright": "",
+	"GameTarget": "ACGIntegrationTarget",
+	"EditorTarget": "ACGIntegrationEditorTarget",
+	"References": [
+		{
+			"Name": "$(EnginePath)/Flax.flaxproj"
+		}
+	],
+	"DefaultScene": null,
+	"DefaultSceneSpawn": {
+		"Position": {
+			"X": 0.0,
+			"Y": 0.0,
+			"Z": 0.0
+		},
+		"Direction": {
+			"X": 0.0,
+			"Y": 0.0,
+			"Z": 0.0
+		}
+	},
+	"MinEngineVersion": "1.7.6407.2",
+	"EngineNickname": null
+}
