@@ -262,28 +262,32 @@ public class AmbientCGPlugin : EditorPlugin
 
     private ContentFolder GetOrCreateImportFolder()
     {
-        const string importFolder = "AmbientCG";
-        var contentFolder = (ContentFolder)Editor.ContentDatabase.Find(importFolder);
+        var settings = Editor.Options.Options.GetCustomSettings<AmbientCGSettings>("AmbientCG");
+        var importFolderPath = Path.Combine(Globals.ProjectContentFolder, settings.ImportFolder);
+        var contentFolder = (ContentFolder)Editor.ContentDatabase.Find(importFolderPath);
         if (contentFolder is not null) return contentFolder;
 
-        Directory.CreateDirectory(Path.Combine(Globals.ProjectContentFolder, importFolder));
-        contentFolder = (ContentFolder)Editor.ContentDatabase.Find(Path.Combine(Globals.ProjectContentFolder, importFolder));
+        Directory.CreateDirectory(importFolderPath);
+        Editor.ContentDatabase.RefreshFolder(Editor.ContentDatabase.Find(Globals.ProjectContentFolder), false);
+        contentFolder = (ContentFolder)Editor.ContentDatabase.Find(importFolderPath);
 
         return contentFolder;
     }
 
     private ContentFolder CreateAssetFolder(string name)
     {
-        const string importFolder = "AmbientCG";
-        var path = Path.Combine(Globals.ProjectContentFolder, importFolder, name);
+        var settings = Editor.Options.Options.GetCustomSettings<AmbientCGSettings>("AmbientCG");
+        var path = Path.Combine(Globals.ProjectContentFolder, settings.ImportFolder, name);
         Directory.CreateDirectory(path);
-        Editor.ContentDatabase.RefreshFolder(GetOrCreateImportFolder(), true);
-        var folder = (ContentFolder)Editor.ContentDatabase.Find(path);
-        return folder;
+        var importFolder = GetOrCreateImportFolder();
+        Editor.ContentDatabase.RefreshFolder(importFolder, true);
+        return (ContentFolder)Editor.ContentDatabase.Find(path);
     }
 
     public override void Deinitialize()
     {
+        _client?.Dispose();
+        _button?.Dispose();
         base.Deinitialize();
     }
 }
