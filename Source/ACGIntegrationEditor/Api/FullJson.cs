@@ -45,7 +45,7 @@ public class FoundAsset
     [JsonExtensionData]
     public IDictionary<string, JToken>? AdditionalData { get; set; }
 
-    public List<Download> Downloads { get; set; } = [];
+    public List<Download> Downloads { get; set; } = new();
 }
 
 public enum AssetType
@@ -99,5 +99,5 @@ public class Download
     /// <summary>
     /// The names of the files contained inside the zip.
     /// </summary>
-    public string[] ZipContent { get; init; } = [];
+    public string[] ZipContent { get; init; }
 }

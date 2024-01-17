@@ -50,7 +50,7 @@ public class AmbientCGPlugin : EditorPlugin
     private HttpClient? _client;
     private FullJson? _lastApiResponse;
 
-    private List<ImportBatch> _importBatches = [];
+    private List<ImportBatch> _importBatches = new();
 
     public override void InitializeEditor()
     {
