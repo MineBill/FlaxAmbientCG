@@ -52,8 +52,8 @@ public class AmbientCGWindow : CustomEditorWindow
 
         var gridElement = panel.CustomContainer<GridPanel>();
         var grid = gridElement.CustomControl;
-        grid.RowFill = [1.0f];
-        grid.ColumnFill = [0.35f, 0.30f, 0.35f];
+        grid.RowFill = new[] { 1.0f };
+        grid.ColumnFill = new[] { 0.35f, 0.30f, 0.35f };
         // grid.CustomControl
         gridElement.Space(0);
         var btn = gridElement.Button("Search ");

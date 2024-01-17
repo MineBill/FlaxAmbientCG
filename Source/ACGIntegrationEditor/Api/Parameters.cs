@@ -14,7 +14,7 @@ public class Parameters
     public string? Id { get; set; } = null;
     public int Offset { get; set; } = 0;
     public int Limit { get; set; } = 5;
-    public IncludeData[]? AdditionalData { get; set; } = [IncludeData.ImageData, IncludeData.DownloadData];
+    public IncludeData[]? AdditionalData { get; set; } = new[] { IncludeData.ImageData, IncludeData.DownloadData };
 
     public string ToParameters()
     {
